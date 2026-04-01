@@ -1,0 +1,15 @@
+#!/bin/env bash
+
+echo "How many boxes?"
+read boxes
+
+echo ""
+echo "How many 'IF' statements?"
+read ifs
+
+echo ""
+log_entropy=$(echo "1/7 * $boxes * l($ifs)" | bc -l)
+
+echo "The limit for the current mind map is:"
+echo "$log_entropy"
+
